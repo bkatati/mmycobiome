@@ -32,7 +32,7 @@ taxa <- readRDS("https://github.com/bkatati/mmycobiome/taxa_Unite2019.rds")
 
 # Generation of phyloseq object of samples ID (rows) x ASVs (Columns)
 # ( NB: an already generated phyloseq object is available here:)
-# ps <- readRDS("C:/Users/katat001/OneDrive - Wageningen University & Research/ACADEMIC/Thesis/Publications/Github/mmycobiome/ps.rds")
+# ps <- readRDS("https://github.com/bkatati/mmycobiome/ps.rds")
 
 rownames(samdf) <- samples.out
 ps <- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=FALSE), sample_data(samdf), tax_table(taxa))
